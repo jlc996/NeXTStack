@@ -1,0 +1,120 @@
+/* Modern Reset */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base Style : includes two fallback fonts */
+body {
+    font-family: "Noto Sans", system-ui, sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: 1.6;
+    color: antiquewhite;
+    background-color: rgb(46, 43, 43);
+    padding: 2rem;
+    max-width: 65ch;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: antiquewhite;
+    background-color: rgb(46, 43, 43);
+    border-style: double;
+    border-color: antiquewhite;
+    padding: 1rem;
+    text-align: center;
+    width: 50rem;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+}
+
+
+h2 {
+    font-size: 1.75rem;
+    color: antiquewhite;
+    background-color: rgb(46, 43, 43);
+    border-style: double;
+    border-color: antiquewhite;
+    padding: 1rem;
+    text-align: center;
+    width: 50rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1rem;
+    color: antiquewhite;
+    background-color: rgb(46, 43, 43);
+    border-style: double;
+    border-color: antiquewhite;
+    padding: 1rem;
+    text-align: center;
+    width: auto;
+}
+
+section {
+    width: 50rem;
+    margin-bottom: 1rem;
+}
+
+img {
+    width: 50rem;
+    height: auto;
+    border-style: double;
+    border-color: antiquewhite;
+    margin-bottom: 1rem;
+}
+
+p {
+    width: 48rem;
+    margin-bottom: 1rem;
+}
+
+.service_link {
+    margin: auto;
+    text-align: center;
+    border-style: dotted;
+    max-width: fit-content;
+}
+
+.center p {
+    justify-content: center;
+}
+
+ul {
+    padding: auto;
+    width: 48rem;
+    margin-bottom: 1rem;
+}
+
+li {
+    margin: 1rem;
+    padding: auto;
+}
+
+section {
+    color: black;
+    background-color: antiquewhite;
+    border-style: double;
+    border-color: black;
+    padding: 1rem;
+}
+
+footer {
+    font-size: 0.65rem;
+    color: black;
+    background-color: antiquewhite;
+    border-style: double;
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}

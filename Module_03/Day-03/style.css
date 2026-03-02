@@ -1,0 +1,44 @@
+/* =========================================
+   1. THE MODERN RESET
+   Removes browser "opinions" and mystery gaps.
+   ========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* The suitcase rule! */
+}
+
+/* =========================================
+   2. BASE STYLES
+   Sets the standard for the whole page.
+   ========================================= */
+body {
+    /* Industry standard font and readability */
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 2rem;
+}
+
+header{
+    font-size: 0.75rem;
+}
+
+main{
+    font-size: 2rem;
+}
+
+footer{
+    font-size: 0.5rem;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+section{
+    margin: 2rem;
+    padding: 1rem;
+    border: 3px solid blue;
+}

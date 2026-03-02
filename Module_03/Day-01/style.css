@@ -1,0 +1,25 @@
+body{
+    background-color: gray;
+}
+
+main {
+  max-width: 900px;
+  margin: 25px auto;
+  padding: 16px;
+  background-color: aquamarine;
+  border: 6px dashed blue;
+}
+
+
+h1, b{
+    color: green;
+    background-color: aqua;
+    height: 200px;
+    width: 200px;
+}
+
+i{
+    color: blue;
+    background-color: aqua;
+}
+

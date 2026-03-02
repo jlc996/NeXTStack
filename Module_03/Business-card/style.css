@@ -1,0 +1,88 @@
+/* Root Variables */
+:root {
+    --header-bg: #010313;
+    --body-bg: #99b8fc;
+    --text-dark: #000808;
+    --text-light: #e4d4d4;
+}
+
+
+/* Modern Reset */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base Style */
+body {
+    font-family: "Asap", system-ui, sans-serif;
+    max-width: 65ch;
+    padding: auto;
+    margin: auto;
+    
+}
+
+header {
+    background-color: var(--header-bg);
+}
+
+.logo {
+    width: 5rem;
+    float: left;
+}
+
+h1 {
+    color: var(--text-light);
+    font-size: 3rem;
+    text-align: center;
+}
+
+.title {
+    color: var(--text-light);
+    font-size: 1.35rem;
+    text-align: center;
+}
+
+.pfp {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100%;
+    float: right;
+    padding: 1rem;
+}
+
+.bio {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 5rem;
+    border-style: solid;
+    border-color: var(--header-bg);
+    color: var(--text-dark);
+    background-color: var(--body-bg);
+}
+
+.globe {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100%;
+    float: right;
+    margin-top: 3rem;
+}
+
+.contact {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5rem;
+    border-style: solid;
+    border-color: var(--header-bg);
+    color: var(--text-dark);
+    background-color: var(--body-bg);
+}
+
+footer {
+    text-align: center;
+}

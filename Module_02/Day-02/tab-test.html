@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Keyboard Tab Practice Form</title>
+</head>
+<body>
+
+  <main>
+    <h1>Tab Navigation Practice Form</h1>
+
+    <p>
+      Use ONLY your keyboard.<br>
+      Press <strong>Tab</strong> to move forward and
+      <strong>Shift + Tab</strong> to move backward.
+    </p>
+
+    <form>
+
+      <!-- Full Name -->
+      <div>
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName">
+      </div>
+
+      <br>
+
+      <!-- Email -->
+      <div>
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email">
+      </div>
+
+      <br>
+
+      <!-- Dropdown Menu -->
+      <div>
+        <label for="track">Favorite NeXT Track:</label>
+        <select id="track" name="track">
+          <option value="">-- Choose One --</option>
+          <option value="web">Web Development</option>
+          <option value="cyber">Cybersecurity</option>
+          <option value="data">Data Analytics</option>
+          <option value="ai">AI / Prompting</option>
+        </select>
+      </div>
+
+      <br>
+
+      <!-- Radio Buttons -->
+      <fieldset>
+        <legend>Preferred Contact Method</legend>
+
+        <div>
+          <input type="radio" id="prefEmail" name="contactPreference" value="email">
+          <label for="prefEmail">Email</label>
+        </div>
+
+        <div>
+          <input type="radio" id="prefPhone" name="contactPreference" value="phone">
+          <label for="prefPhone">Phone</label>
+        </div>
+      </fieldset>
+
+      <br>
+
+      <!-- Checkbox -->
+      <div>
+        <input type="checkbox" id="agree" name="agree">
+        <label for="agree">I agree to be contacted.</label>
+      </div>
+
+      <br>
+
+      <!-- Submit Button -->
+      <button type="submit">Submit Form</button>
+
+    </form>
+
+  </main>
+
+</body>
+</html>
