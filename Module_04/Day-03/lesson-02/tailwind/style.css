@@ -1,0 +1,23 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Step 1: Base Styles (Mobile-First) */
+body {
+    background-color: #f4f4f4;
+    padding: 20px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 30px;
+}
