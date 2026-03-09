@@ -150,7 +150,7 @@ body {
     backdrop-filter: blur(5px);
 }
 
-.hero-btn {
+.hero-btn, .btn {
     background-color: var(--accent-color);
     color: var(--text-light);
     border: none;
@@ -161,7 +161,7 @@ body {
     
 }
 
-.hero-btn:hover {
+.hero-btn:hover, .btn:hover {
     background-color: var(--accent-color-2);
     color: var(--text-main);
     transform: scale(1.05);         /* slightly enlarge button */
