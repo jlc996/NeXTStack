@@ -10,7 +10,9 @@
     --container-width: 1100px;
 }
 
+
 /* 2. Reset & Base Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -22,27 +24,34 @@ body {
     line-height: 1.6;
     background-color: var(--bg-light);
     color: var(--text-main);
+
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
+
 /* 3. Navbar */
+
 .custom-navbar {
-  background-color: var(--primary-color); /* your navbar color */
+    background-color: var(--primary-color); /* your navbar color */
 }
 
+/* Navbar text */
 .custom-navbar .navbar-brand,
 .custom-navbar .nav-link {
-  color: white;
+    color: var(--text-light);
 }
 
+/* Navigation layout */
 .nav-links {
     list-style: none;
     display: flex;
 }
 
-.nav-links li { margin-left: 20px; }
+.nav-links li {
+    margin-left: 20px;
+}
 
 .nav-links a {
     color: #bdc3c7;
@@ -51,14 +60,26 @@ body {
     transition: color 0.3s ease;
 }
 
-.nav-links a:hover, .nav-links a.active {
+/* Link hover + active */
+.nav-links a:hover,
+.nav-links a.active {
     color: var(--text-light);
 }
 
+/* Dropdown menu */
 .dropdown-menu {
     background-color: var(--text-light);   /* white background */
 }
 
+.dropdown-item {
+    color: var(--text-main);               /* dark readable text */
+}
+
+.dropdown-item:hover {
+    background-color: var(--bg-light);
+}
+
+/* Dropdown toggle */
 .custom-navbar .dropdown-toggle {
     color: var(--text-light);
 }
@@ -71,14 +92,18 @@ body {
     color: var(--accent-color);
 }
 
-.dropdown-item {
-    color: var(--text-main);               /* dark readable text */
+/* Active nav link */
+.custom-navbar .nav-link.active {
+    color: var(--accent-color) !important;  /* changes the active page color */
+    font-weight: 600;
 }
 
-.dropdown-item:hover {
-    background-color: var(--bg-light);
+/* Hover nav link */
+.custom-navbar .nav-link:hover {
+    color: var(--accent-color);             /*makes the hover color the same as the accent color */
 }
 
+/* Navbar toggle button */
 .navbar-toggler {
     border-color: var(--text-light);
 }
@@ -87,20 +112,11 @@ body {
     filter: invert(1);          /*inverts hamburger icon color */
 }
 
-.custom-navbar .nav-link.active {
-    color: var(--accent-color) !important;  /* changes the active page color */
-    font-weight: 600;
-}
-
-.custom-navbar .nav-link:hover {
-    color: var(--accent-color);             /*makes the hover color the same as the accent color */
-}
-
+/* Underline navbar links with fade effect */
 .custom-navbar .nav-link {
     position: relative;
 }
 
-/* Underline navbar links with fade effect */
 .custom-navbar .nav-link::after {
     content: "";
     position: absolute;
@@ -108,6 +124,7 @@ body {
     height: 2px;
     bottom: -4px;
     left: 0;
+
     background-color: var(--accent-color-2);
     transition: width 0.3s ease;
 }
@@ -117,10 +134,14 @@ body {
     width: 100%;
 }
 
+
 /* 4. Hero Section */
+
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-                url('https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg');
+    background:
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url('https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg');
+
     background-size: cover;
     background-position: center;
     min-height: 60vh;
@@ -128,10 +149,12 @@ body {
 
 /* Hero heading */
 .hero h1 {
-    text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
-    display: inline-block;
     font-size: clamp(2rem, 5vw, 3.5rem);
     margin-bottom: 15px;
+
+    display: inline-block;
+
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
 
     /* Frosted glass backdrop */
     padding: 6px 12px;
@@ -142,59 +165,81 @@ body {
 
 /* Hero paragraph */
 .hero p {
-    text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
     display: inline-block;
+
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+
     padding: 6px 12px;
     border-radius: 6px;
     background: rgba(0,0,0,0.35);
     backdrop-filter: blur(5px);
 }
 
-.hero-btn, .btn {
-    background-color: var(--accent-color);
-    color: var(--text-light);
-    border: none;
-    padding: 12px 35px;
-    border-radius: 50px;
-    font-weight: bold;
-    max-width: fit-content;
-    
-}
-
-.hero-btn:hover, .btn:hover {
-    background-color: var(--accent-color-2);
-    color: var(--text-main);
-    transform: scale(1.05);         /* slightly enlarge button */
-    transition: all 0.3s ease;      /*smooth out transition */
-}
-
+/* Hero layout */
 .custom-hero {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
+
+/* Buttons */
+
+.hero-btn,
+.btn {
+    background-color: var(--accent-color);
+    color: var(--text-light);
+
+    border: none;
+    padding: 12px 35px;
+    border-radius: 50px;
+    font-weight: bold;
+
+    max-width: fit-content;
+}
+
+/* Button hover */
+.hero-btn:hover,
+.btn:hover {
+    background-color: var(--accent-color-2);
+    color: var(--text-main);
+
+    transform: scale(1.05);         /* slightly enlarge button */
+    transition: all 0.3s ease;      /*smooth out transition */
+}
+
+
 /* 5. Main Layout & Cards */
+
 .container {
     flex: 1;
+
     width: 90%;
     max-width: var(--container-width);
+
     margin: 0 auto;
     padding: 40px 0;
 }
 
+/* Card grid layout */
 .card-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columns on desktop */
+
     gap: 30px;
     margin-top: -100px; /* Overlap effect */
 }
 
+/* Card styling */
 .card {
     background: var(--card-bg);
+
     padding: 40px 25px;
     border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+
     text-align: center;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
     transition: transform 0.3s ease;
 }
 
@@ -204,28 +249,36 @@ body {
     box-shadow: 0 15px 40px rgba(0,0,0,0.15);
 }
 
+
 /* 6. Footer */
+
 .footer {
     background: var(--primary-color);
     color: var(--text-light);
+    width: 100%;
 }
 
-.bi-envelope, .bi-telephone {
+.bi-envelope,
+.bi-telephone {
     margin-right: 0.5rem;
 }
+
 
 /* 7. MEDIA QUERIES (The Responsive Magic) */
 
 /* Tablet & Smaller Screens */
 @media (max-width: 992px) {
+
     .card-grid {
         grid-template-columns: repeat(2, 1fr); /* Drop to 2 columns */
         margin-top: 20px; /* Remove overlap for cleaner mobile feel */
     }
+
 }
 
 /* Mobile Phones */
 @media (max-width: 600px) {
+
     .navbar {
         flex-direction: column; /* Stack logo and links */
         gap: 10px;
@@ -242,4 +295,5 @@ body {
     .hero {
         height: 50vh;
     }
+
 }
