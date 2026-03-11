@@ -255,6 +255,11 @@ body {
     object-fit:cover;
 }
 
+.modal-content {
+    background-color: var(--card-bg);
+    color: var(--primary-color);
+}
+
 /* 6. Footer */
 
 .footer {
