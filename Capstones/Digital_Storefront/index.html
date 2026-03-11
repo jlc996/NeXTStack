@@ -102,16 +102,28 @@
                     <div class="card h-100 shadow">
                         <div class="card-body text-center">
 
-                            <img src="https://images.pexels.com/photos/6942359/pexels-photo-6942359.jpeg" class="card-img-top" alt="Custom PC Build">
+                            <img src="https://images.pexels.com/photos/6942359/pexels-photo-6942359.jpeg"
+                                class="card-img-top" alt="Custom PC Build">
 
                             <h5 class="card-title mt-3">Custom Computers</h5>
+
+                            <h3 class="text-primary">Starting at $1500</h3>
 
                             <p class="card-text">
                                 We build custom computers tailored for gaming, business, and home use with the best
                                 components.
                             </p>
 
-                            <a href="contact.html" class="btn btn-primary">Request Build</a>
+                            <div class="d-flex justify-content-center gap-2">
+                                <button class="btn btn-outline-secondary" data-bs-toggle="modal"
+                                    data-bs-target="#quickViewPC">
+                                    Quick View
+                                </button>
+
+                                <a href="contact.html" class="btn btn-primary">
+                                    Request Build
+                                </a>
+                            </div>
 
                         </div>
                     </div>
@@ -120,17 +132,30 @@
                 <!-- Computer Repairs -->
                 <div class="col-md-4">
                     <div class="card h-100 shadow">
+
+                        <img src="https://images.pexels.com/photos/34338616/pexels-photo-34338616.jpeg"
+                            class="card-img-top" alt="Computer case">
+
                         <div class="card-body text-center">
 
-                            <img src="https://images.pexels.com/photos/34338616/pexels-photo-34338616.jpeg" class="card-img-top" alt="Computer Repair">
-
                             <h5 class="card-title mt-3">Computer Repairs</h5>
+
+                            <h3 class="text-primary">Starting at $40</h3>
 
                             <p class="card-text">
                                 Fast and reliable repair services for hardware and software issues.
                             </p>
 
-                            <a href="contact.html" class="btn btn-primary">Schedule Repair</a>
+                            <div class="d-flex justify-content-center gap-2">
+                                <button class="btn btn-outline-secondary" data-bs-toggle="modal"
+                                    data-bs-target="#quickViewRepair">
+                                    Quick View
+                                </button>
+
+                                <a href="contact.html" class="btn btn-primary">
+                                    Schedule Repair
+                                </a>
+                            </div>
 
                         </div>
                     </div>
@@ -139,60 +164,70 @@
                 <!-- Computer Upgrades -->
                 <div class="col-md-4">
                     <div class="card h-100 shadow">
+
+                        <img src="https://images.pexels.com/photos/4316/technology-computer-chips-gigabyte.jpg"
+                            class="card-img-top" alt="Computer Upgrade">
+
                         <div class="card-body text-center">
 
-                            <img src="https://images.pexels.com/photos/4316/technology-computer-chips-gigabyte.jpg" class="card-img-top" alt="Computer Upgrade">
-
                             <h5 class="card-title mt-3">Computer Upgrades</h5>
+
+                            <h3 class="text-primary">Starting at $40</h3>
 
                             <p class="card-text">
                                 Upgrade your RAM, storage, graphics card, and more to boost performance.
                             </p>
 
-                            <a href="contact.html" class="btn btn-primary">Upgrade Now</a>
+                            <div class="d-flex justify-content-center gap-2">
+
+                                <button class="btn btn-outline-secondary" data-bs-toggle="modal"
+                                    data-bs-target="#quickViewUpgrade">
+                                    Quick View
+                                </button>
+
+                                <a href="contact.html" class="btn btn-primary">
+                                    Upgrade Now
+                                </a>
+
+                            </div>
 
                         </div>
                     </div>
                 </div>
-
-            </div>
         </section>
     </main>
 
     <footer class="footer text-white mt-auto">
-        
+
         <section class="newsletter text-center mt-1">
 
-    <div class="container">
+            <div class="container">
 
-        <h2 class="mb-3">Join Our Newsletter</h2>
-        <p class="mb-4">
-            Stay updated with the latest computer builds, repair tips, and special offers.
-        </p>
+                <h2 class="mb-3">Join Our Newsletter</h2>
+                <p class="mb-4">
+                    Stay updated with the latest computer builds, repair tips, and special offers.
+                </p>
 
-        <form class="row justify-content-center g-2">
+                <form class="row justify-content-center g-2">
 
-            <div class="col-md-6">
-                <input 
-                    type="email" 
-                    class="form-control form-control-lg" 
-                    placeholder="Enter your email address" 
-                    required>
+                    <div class="col-md-6">
+                        <input type="email" class="form-control form-control-lg" placeholder="Enter your email address"
+                            required>
+                    </div>
+
+                    <div class="col-md-auto">
+                        <button type="submit" class="btn btn-lg btn-primary">
+                            Subscribe
+                        </button>
+                    </div>
+
+                </form>
+
             </div>
 
-            <div class="col-md-auto">
-                <button type="submit" class="btn btn-lg btn-primary">
-                    Subscribe
-                </button>
-            </div>
+        </section>
 
-        </form>
 
-    </div>
-
-</section>
-        
-        
         <div class="container py-4 text-center">
 
             <div class="row justify-content-center">
@@ -218,6 +253,140 @@
             </p>
         </div>
     </footer>
+
+    <!-- Quick View Modal Custom Builds-->
+    <div class="modal fade" id="quickViewPC" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">Custom Computer Build Services</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body text-center">
+
+                    <img src="https://images.pexels.com/photos/6942359/pexels-photo-6942359.jpeg" class="img-fluid mb-3"
+                        alt="Custom PC Build">
+
+                    <h4 class="text-primary">Starting at $1500</h4>
+
+                    <p>
+                        Our custom computers are built for gaming, business, streaming,
+                        and high-performance workstations using premium components.
+                    </p>
+
+                    <ul class="text-start">
+                        <li>Intel or AMD processors</li>
+                        <li>High-performance GPUs</li>
+                        <li>Custom RGB cases</li>
+                        <li>Fast SSD storage</li>
+                    </ul>
+
+                </div>
+
+                <div class="modal-footer">
+                    <a href="contact.html" class="btn btn-primary">Request Build</a>
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick View Modal Repairs -->
+    <div class="modal fade" id="quickViewRepair" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">Computer Repair Services</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <img src="https://images.pexels.com/photos/34338616/pexels-photo-34338616.jpeg"
+                                class="img-fluid rounded" alt="Computer Repair">
+                        </div>
+
+                        <div class="col-md-6">
+                            <h4 class="text-primary">Starting at $40</h4>
+
+                            <p>
+                                Our technicians provide fast diagnostics and reliable repairs
+                                for desktops and laptops.
+                            </p>
+
+                            <ul>
+                                <li>Hardware repair</li>
+                                <li>Software troubleshooting</li>
+                                <li>Performance upgrades</li>
+                                <li>System cleanup</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <a href="contact.html" class="btn btn-primary">Schedule Repair</a>
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick View Modal Upgrades -->
+    <div class="modal fade" id="quickViewUpgrade" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">Computer Upgrade Services</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <img src="https://images.pexels.com/photos/4316/technology-computer-chips-gigabyte.jpg"
+                                class="img-fluid rounded" alt="Computer Upgrade">
+                        </div>
+
+                        <div class="col-md-6">
+
+                            <h4 class="text-primary">Starting at $40</h4>
+
+                            <p>
+                                Improve your computer's speed and performance with professional
+                                hardware upgrades.
+                            </p>
+
+                            <ul>
+                                <li>RAM upgrades for better multitasking</li>
+                                <li>SSD installation for faster boot times</li>
+                                <li>Graphics card upgrades for gaming</li>
+                                <li>Cooling and performance improvements</li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <a href="contact.html" class="btn btn-primary">Upgrade Now</a>
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
