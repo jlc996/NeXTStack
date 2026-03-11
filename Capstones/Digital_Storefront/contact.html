@@ -49,13 +49,64 @@
 
     <main class="container">
         <section class="content-area">
-            <h1>Our Expertise</h1>
-            <p>We provide a wide range of services to help your business thrive in the digital age.</p>
-            <ul>
-                <li>Custom Web Applications</li>
-                <li>E-commerce Solutions</li>
-                <li>Performance Optimization</li>
-            </ul>
+            <section class="content-area">
+                <h1 class="mb-4 text-center">Contact Us</h1>
+
+                <div class="row justify-content-center">
+
+                    <div class="col-md-8">
+                        <div class="card contact-card shadow-sm p-4">
+
+                            <h3 class="text-center mb-4">Send Us a Message</h3>
+
+                            <form>
+
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Enter your name"
+                                        required>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter your email"
+                                        required>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="service" class="form-label">Service Needed</label>
+                                    <select class="form-select" id="service" required>
+                                        <option value="" selected disabled>Select a service</option>
+                                        <option value="custom-computer">Custom Computer Build</option>
+                                        <option value="repair">Computer Repair</option>
+                                        <option value="upgrade">Hardware Upgrade</option>
+                                    </select>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="date" class="form-label">Preferred Contact Date</label>
+                                    <input type="date" class="form-control" id="date">
+                                </div>
+
+                                <div class="mb-4">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" rows="4"
+                                        placeholder="Write your message here..." required></textarea>
+                                </div>
+
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-lg">
+                                        Send Message
+                                    </button>
+                                </div>
+
+                            </form>
+
+                        </div>
+                    </div>
+
+                </div>
+            </section>
         </section>
     </main>
 

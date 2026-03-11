@@ -244,11 +244,10 @@ body {
 }
 
 /* Cards will now hover and enlarge slightly */
-.card:hover {
+.card:not(.contact-card):hover {
     transform: translateY(-8px) scale(1.02);
     box-shadow: 0 15px 40px rgba(0,0,0,0.15);
 }
-
 
 /* 6. Footer */
 
