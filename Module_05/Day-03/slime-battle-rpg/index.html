@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RPG Battle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="game-card">
+        <h1>Slime Battle!</h1>
+        <p>Your Health: <span id="hp-display">200</span></p>
+        <p id="message">A green slime blocks your path...</p>
+        
+        <p>Slime Health: <span id="slime-hp-display">200</span></p>
+        <p id="slime-message">It is ready to strike!</p>
+
+
+        <button onclick="playTurn()">Fight!</button>
+
+        <button onclick="healTurn()">Heal!</button>
+
+        <button id="reset-btn" onclick="resetGame()">Reset</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

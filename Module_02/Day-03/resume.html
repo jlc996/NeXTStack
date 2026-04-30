@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1 class="resume">Resume</h1>
+  </header>
+
+  <main>
+    <figure>
+      <img src="assets/images/profile.jpg" alt="Photo of Joshua Craven." class="center-img" />
+    </figure>
+
+    <section class="about">
+      <h2>About Me</h2>
+      <p>My name is Joshua Craven.</p>
+      <p>I am an electrical technician looking to learn more about computer coding and eventually get into more computer
+        science oriented fields. I have knowledge in assembling computers and servers along with some coding experience.
+        Through NeXTStack, I am hoping to learn more of the skills I need to make my dream of being in the computer
+        science field realized.</p>
+    </section>
+
+    <section class="experience">
+      <h2>Job Experience</h2>
+      <ul>
+        <li>Electrical Technician at E Tech Group from April 2024 to January 2025</li>
+      </ul>
+    </section>
+
+    <section class="education">
+      <h2>Education</h2>
+      <ol>
+        <li>Mississippi Gulf Coast Community College (Graduated 2017)</li>
+        <li>University of Southern Mississippi</li>
+        <li>Mississippi Coding Academies / NeXTStack (currently enrolled)</li>
+      </ol>
+    </section>
+
+    <section class="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Professional Habits</li>
+        <li>Problem-solving</li>
+        <li>Blueprint Reading</li>
+        <li>Electrical Motors</li>
+        <li>Wiring</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>C++</li>
+      </ul>
+    </section>
+
+    <section class="links">
+      <h2>Links</h2>
+      <ul>
+        <li><a href="https://github.com/jlc996" target="_blank" rel="noopener">My GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/joshualeecraven" target="_blank" rel="noopener">My LinkedIn</a></li>
+      </ul>
+    </section>
+
+    <section class="contact-form">
+      <h2>Contact Form</h2>
+      <p>For questions or inquiries, please complete the form.</p>
+
+      <form action="#" method="post">
+        <section class="contact-info">
+          <div>
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" required>
+          </div>
+
+          <div>
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" required>
+          </div>
+
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div>
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+        </section>
+        <div>
+          <fieldset>
+            <legend>Contact Preference</legend>
+            <div>
+              <input type="radio" id="prefEmail" name="contactPreference" value="email">
+              <label for="prefEmail">Email</label>
+            </div>
+
+            <div>
+              <input type="radio" id="prefPhone" name="contactPreference" value="phone">
+              <label for="prefPhone">Phone</label>
+            </div>
+          </fieldset>
+
+          <div>
+            <input type="checkbox" id="agree" name="agree" value="yes" required>
+            <label for="agree">I agree to the terms.</label>
+          </div>
+
+        </div>
+
+        <button type="submit">Submit</button>
+
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© Joshua Craven 2026.</p>
+  </footer>
+</body>
+
+</html>

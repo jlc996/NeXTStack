@@ -1,0 +1,25 @@
+/* define your tokens */
+:root {
+    --brand-primary: #2b2181;
+    --para-primary: #0c6970;
+    --btn-primary: #1da565b2;
+}
+
+/* Use the tokens */
+.brand-primary {
+    background-color: #0c6970;
+    color: beige;
+
+}
+.para-primary {
+    color: #0c6970;
+}
+
+.btn-primary {
+    background-color: #1da565b2;
+}
+
+.btn-primary:hover {
+    background-color: aqua;
+    cursor: pointer;
+}

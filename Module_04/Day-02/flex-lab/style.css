@@ -1,0 +1,166 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* 1. The Navbar Container */
+.navbar {
+  display: flex;
+  align-items: center; /* Vertically centers everything */
+  justify-content: space-between; /* Pushes brand left and links right */
+  padding: 1rem 5%;
+  background-color: navy;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* Space between logo and text */
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+}
+
+.brand-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem; /* Space between menu items */
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #64748b;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #38bdf8;
+}
+
+/* Optional: Style for a Call to Action button */
+.nav-btn {
+  background: #38bdf8;
+  color: white !important;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+}
+
+/* 2. The Unordered List (UL) */
+.nav-links {
+    /* Turn the List into a Flex Container to sit items side-by-side */
+    display: flex; 
+    
+    /* Remove the bullet points */
+    list-style: none; 
+}
+
+/* 3. The List Items (Spacing) */
+.nav-links li {
+    margin-left: 20px;
+}
+
+/* 4. Link Styling */
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* 5. Simple Responsive Touch */
+@media (max-width: 600px) {
+    .navbar {
+        /* On small screens, stack the logo on top of the links */
+        flex-direction: column;
+    }
+    
+    .nav-links {
+        margin-top: 10px;
+    }
+}
+
+.card-grid {
+  display: grid;
+  gap: 2rem;
+  /* Responsiveness without Media Queries */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Individual Cards */
+.card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-image {
+  height: 200px;
+  background: linear-gradient(45deg, #334155, #475569);
+}
+
+.images {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+  padding: 1.5rem;
+}
+
+.tag {
+  color: var(--accent);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.card-content h3 {
+  color: var(--text-main);
+  margin: 0.5rem 0;
+}
+
+.card-content p {
+  color: var(--text-muted);
+  line-height: 1.6;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+.button {
+  display: inline-block;
+  color: var(--text-main);
+  text-decoration: none;
+  border: 1px solid var(--accent);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  transition: background 0.2s;
+}
+
+.button:hover {
+  background: var(--accent);
+  color: var(--bg-color);
+}

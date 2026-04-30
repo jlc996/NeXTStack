@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Multi-field Form</title>
+    </head>
+    <body>
+
+  <main>
+    <h1>Multi-field Contact Form</h1>
+    <p>Fill out the form below.</p>
+
+    <form action="#" method="post">
+        <div>
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" required>
+        </div>
+
+        <div>
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" required>
+        </div>
+
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div>
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="track">Favorite Track</label>
+            <select id="track" name="track">
+                <option value="">-- Select One --</option>
+                <option value="web">Web Development</option>
+                <option value="data">Data Analytics</option>
+                <option value="cyber">Cybersecurity</option>
+                <option value="ai">AI / Prompting</option>
+            </select>
+
+            <br>
+            <br>
+
+            <fieldset>
+                <legend>Contact Preference</legend>
+
+                <div>
+                    <input type="radio" id="prefEmail" name="contactPreference" value="email">
+                    <label for="prefEmail">Email</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="prefPhone" name="contactPreference" value="phone">
+                    <label for="prefPhone">Phone</label>
+                </div>
+            </fieldset>
+
+            <br>
+
+            <div>
+                <input type="checkbox" id="agree" name="agree" value="yes" required>
+                <label for="agree">I agree to the terms.</label>
+            </div>
+
+        </div>
+
+        <br>
+        
+        <button type="submit">Submit</button>
+
+        </form>
+
+    </main>
+
+    </body>
+</html>
