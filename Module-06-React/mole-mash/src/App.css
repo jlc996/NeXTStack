@@ -1,0 +1,36 @@
+.hole {
+  width: 150px;
+  height: 150px;
+
+  background-image: url("https://cdn.pixabay.com/photo/2015/10/09/11/26/the-mound-979105_1280.jpg");
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+
+  border: 2px solid #333;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.mole {
+  display: none;
+  font-size: 4rem;
+}
+
+.hole.active .mole {
+  display: block;
+}
+
+body {
+  background-image: url("https://cdn.pixabay.com/photo/2020/06/21/09/48/hill-5324149_1280.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
