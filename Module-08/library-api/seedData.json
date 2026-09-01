@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Designing Data-Intensive Applications",
+    "author": "Martin Kleppmann",
+    "price": 38.99,
+    "genre": "Software Engineering",
+    "inStock": true,
+    "tags": ["distributed-systems", "databases", "scalability"]
+  },
+  {
+    "title": "Clean Code",
+    "author": "Robert C. Martin",
+    "price": 31.50,
+    "genre": "Software Craftsmanship",
+    "inStock": true,
+    "edition": 1
+  },
+  {
+    "title": "JavaScript: The Good Parts",
+    "author": "Douglas Crockford",
+    "price": 19.99,
+    "genre": "Programming Languages",
+    "inStock": false,
+    "rating": 4.5
+  }
+]
