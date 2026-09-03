@@ -1,0 +1,102 @@
+[
+    {
+        "title": "Super Mario Bros.",
+        "platform": "NES",
+        "releaseYear": 1985,
+        "genre": "Platformer",
+        "developer": "Nintendo",
+        "publisher": "Nintendo",
+        "rating": 9.5,
+        "completed": true
+    },
+    {
+        "title": "The Legend of Zelda",
+        "platform": "NES",
+        "releaseYear": 1986,
+        "genre": "Action-Adventure",
+        "developer": "Nintendo",
+        "publisher": "Nintendo",
+        "rating": 9.3,
+        "completed": true
+    },
+    {
+        "title": "Sonic the Hedgehog",
+        "platform": "Sega Genesis",
+        "releaseYear": 1991,
+        "genre": "Platformer",
+        "developer": "Sonic Team",
+        "publisher": "Sega",
+        "rating": 9.0,
+        "completed": false
+    },
+    {
+        "title": "Street Fighter II",
+        "platform": "Arcade",
+        "releaseYear": 1991,
+        "genre": "Fighting",
+        "developer": "Capcom",
+        "publisher": "Capcom",
+        "rating": 9.2,
+        "completed": false
+    },
+    {
+        "title": "Super Metroid",
+        "platform": "SNES",
+        "releaseYear": 1994,
+        "genre": "Action-Adventure",
+        "developer": "Nintendo R&D1",
+        "publisher": "Nintendo",
+        "rating": 9.7,
+        "completed": true
+    },
+    {
+        "title": "Donkey Kong Country",
+        "platform": "SNES",
+        "releaseYear": 1994,
+        "genre": "Platformer",
+        "developer": "Rare",
+        "publisher": "Nintendo",
+        "rating": 9.1,
+        "completed": true
+    },
+    {
+        "title": "Pokémon Red",
+        "platform": "Game Boy",
+        "releaseYear": 1996,
+        "genre": "RPG",
+        "developer": "Game Freak",
+        "publisher": "Nintendo",
+        "rating": 9.5,
+        "completed": true
+    },
+    {
+        "title": "Final Fantasy VII",
+        "platform": "PlayStation",
+        "releaseYear": 1997,
+        "genre": "RPG",
+        "developer": "Square",
+        "publisher": "Square",
+        "rating": 9.4,
+        "completed": false
+    },
+    {
+        "title": "Castlevania: Symphony of the Night",
+        "platform": "PlayStation",
+        "releaseYear": 1997,
+        "genre": "Action-Adventure",
+        "developer": "Konami",
+        "publisher": "Konami",
+        "rating": 9.6,
+        "completed": true
+    },
+    {
+        "title": "GoldenEye 007",
+        "platform": "Nintendo 64",
+        "releaseYear": 1997,
+        "genre": "First-Person Shooter",
+        "developer": "Rare",
+        "publisher": "Nintendo",
+        "rating": 9.0,
+        "completed": false
+    }
+]
